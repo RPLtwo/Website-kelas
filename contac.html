@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <a href="#" class="logo">XI.RPL.2</a>
+    <div class="hamburger-alt" id="hamburger">&#9776;</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="Siswa Siswi.html">Siswa Siswi</a>
+      <a href="galeri.html">Galery</a>
+      <a href="contac.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="tentang">
+    <h3>Terima Kasih!</h3>
+    <p>
+      Terima kasih sudah mampir ke website resmi kelas XI RPL 2. Kami sangat menghargai waktu yang kamu luangkan untuk melihat-lihat karya, kebersamaan, dan cerita dari kelas kami.
+    </p>
+    <p>
+      Jika kamu punya saran, masukan, atau sekadar ingin menyapa, jangan ragu untuk menghubungi kami melalui media sosial yang tersedia di bawah ini. Kritik dan saran kamu sangat berarti untuk perkembangan kami ke depannya.
+    </p>
+
+    <div class="kontak-icon" style="display: flex; justify-content: center; gap: 25px; margin-top: 30px;">
+      <a href="https://www.instagram.com/xiiclusive.rpldua?igsh=cjB2dTNic2YwYjI5" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="mailto:rpldua8@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+      <a href="https://www.tiktok.com/@offc.rpldua?_t=ZS-8xuPWgDerIG&_r=1" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
+    </div>
+
+
+<!-- ==== BUBBLE KOMENTAR ==== -->
+<div class="bubble-chat">
+  <button id="toggle-chat">💬</button>
+  <div class="chat-box" id="chat-box">
+    <h2>Chat</h2>
+    <div id="chat-messages"></div>
+
+    <form id="chat-form">
+      <input type="text" id="chat-name" placeholder="Masukkan nama" required />
+      <textarea id="chat-input" placeholder="Masukkan pesan" rows="2" required></textarea>
+      <button type="submit">➤</button>
+    </form>
+  </div>
+</div>
+
+
+<script type="module" src="bubble-komentar.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

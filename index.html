@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--<link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/pw/AP1GczMcLu4jnDbWBnhVRZYJ98pdkl-kic2_4So2DSutaGOB1Mn2h55nxdz1wI4l0ZSIrw06VsxYp3ddIyFmQbwEsThzjoeDIdo9RqtLTbar8cfb6SPgOET1XDjts9RV8RhS0GNTarKryHJ4ue6hGWkxqE0S=w878-h878-s-no-gm?authuser=0">-->
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">XI.RPL.2</a>
+
+    <div class="hamburger-alt" id="hamburger">&#9776;</div>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="Siswa Siswi.html">Siswa Siswi</a>
+            <a href="galeri.html">Galery</a>
+            <a href="contac.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Welcome To Class RPL 2</h1>
+            <h3>Kelas Paling Rame, Tapi Penuh Cerita</h3>
+            <p>Nggak ada yang sempurna, kecuali absen yang lengkap dan tugas yang belum dikerjain, Asoyy!!</p>
+            <div class="btn-box">
+                <a href="tentang.html">Tentang</a>
+                <a href="Siswa Siswi.html">Anggota</a>
+            </div>
+        </div>
+        <div class="home-right">
+            <div class="home-img"></div>
+        </div>
+
+        <div class="home-icon">
+            <a href="https://www.tiktok.com/@offc.rpldua?_t=ZS-8xuPWgDerIG&_r=1"><ion-icon name="logo-tiktok"></ion-icon></ion-icon></a>
+            <a href="mailto:rpldua8@gmail.com"><ion-icon name="mail"></ion-icon></a>
+            <a href="https://www.instagram.com/xiiclusive.rpldua?igsh=cjB2dTNic2YwYjI5"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </section>
+
+<!-- ==== BUBBLE KOMENTAR ==== -->
+<div class="bubble-chat">
+  <button id="toggle-chat">💬</button>
+  <div class="chat-box" id="chat-box">
+    <h2>Chat</h2>
+    <div id="chat-messages"></div>
+
+    <form id="chat-form">
+      <input type="text" id="chat-name" placeholder="Masukkan nama" required />
+      <textarea id="chat-input" placeholder="Masukkan pesan" rows="2" required></textarea>
+      <button type="submit">➤</button>
+    </form>
+  </div>
+</div>
+
+
+<script type="module" src="bubble-komentar.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

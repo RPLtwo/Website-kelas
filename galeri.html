@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RPL - Galery</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+<body>
+  <!-- Navbar -->
+  <header class="header">
+    <a href="#" class="logo">XI.RPL.2</a>
+    <div class="hamburger-alt" id="hamburger">&#9776;</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="Siswa Siswi.html">Siswa Siswi</a>
+      <a href="galeri.html" class= "active">Galery</a>
+      <a href="contac.html">Contact</a>
+    </nav>
+  </header>
+      
+<section class="galeri">
+
+  <!-- ulangi ini per bulan -->
+  <h2>juni 2025</h2>
+  <div class="foto-scroll">
+    <div class="foto-item">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOTyf7MjSjQe_BoX9OWGwJvCVmCLw0drk357lC91-FGaTaR78kYkt9J5W_QecppKwBSWCqYzV2R3Y5OsyrmOFV7c_JAR-zLejCgt3CZAyvFBcl9MrApdHlTPB2Fj9QbmjTTxe6FQGdsuOLdlj59FWFi=w659-h878-s-no-gm?authuser=0" alt="Juni 1">
+    </div>
+    <div class="foto-item">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNEUHGfuHq41UDG6dFc-R2O4rwvQXez578bnT4MWWyDPghgS-iBONu_ZeykSZuqYuUtLgcmwBthC4MM23RILyq-EOBEL2G4DXHKi7yUatfWYk4YU8DExMcbdAk812MmouJWtg0RYe3nD_0S-ZsCMVj1=w659-h878-s-no-gm?authuser=0" alt="Juni 2">
+    </div>
+    <!--<div class="foto-item">
+      <img src="galeri/des-3.jpg" alt="Desember 4">
+    </div>
+        <div class="foto-item">
+      <img src="galeri/des-3.jpg" alt="Desember 5">
+    </div>
+    <div class="foto-item">
+      <img src="galeri/des-3.jpg" alt="Desember 6">
+    </div>
+    <div class="foto-item">
+      <img src="galeri/des-3.jpg" alt="Desember 7">
+    </div>
+    <div class="foto-item">
+      <img src="galeri/des-3.jpg" alt="Desember 8">
+    </div>
+    <div class="foto-item">
+      <img src="galeri/des-3.jpg" alt="Desember 9">
+    </div>
+
+     Tambah lagi jika ada -->
+  </div>
+  <!-- akhir -->
+
+
+ <!-- <h2>Januari 2026</h2>
+  <div class="foto-scroll">
+    <div class="foto-item">
+      <img src="galeri/jan-1.jpg" alt="Januari 1">
+    </div>
+    <div class="foto-item">
+      <img src="galeri/jan-2.jpg" alt="Januari 2">
+    </div>
+     Tambah lagi jika ada 
+  </div>
+</section>-->
+
+<div id="modal-galeri" class="modal-galeri">
+  <div class="modal-galeri-content">
+    <span class="galeri-close">&times;</span>
+    <img id="modal-galeri-img" src="" alt="Foto Besar" />
+  </div>
+</div>
+
+
+
+<!-- ==== BUBBLE KOMENTAR ==== -->
+<div class="bubble-chat">
+  <button id="toggle-chat">💬</button>
+  <div class="chat-box" id="chat-box">
+    <h2>Chat</h2>
+    <div id="chat-messages"></div>
+
+    <form id="chat-form">
+      <input type="text" id="chat-name" placeholder="Masukkan nama" required />
+      <textarea id="chat-input" placeholder="Masukkan pesan" rows="2" required></textarea>
+      <button type="submit">➤</button>
+    </form>
+  </div>
+</div>
+
+
+<script type="module" src="bubble-komentar.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
