@@ -116,7 +116,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Blok klik kanan
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 });
 
+// Blok sentuhan lama (long press) di HP
+document.addEventListener('touchstart', function preventTouch(e) {
+  if (e.target.tagName === "IMG") {
+    let timer = setTimeout(() => {
+      e.preventDefault();
+    }, 300);
+    e.target.addEventListener('touchend', () => clearTimeout(timer), { once: true });
+  }
+});
